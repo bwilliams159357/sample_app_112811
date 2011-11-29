@@ -1,8 +1,7 @@
 SampleApp110811::Application.routes.draw do
-  get "sessions/new"
 
   resources :users
-  resources :session, :only => [:new, :create, :destroy]
+  resources :sessions, :only => [:new, :create, :destroy]
 
 
   root :to => 'pages#home'
